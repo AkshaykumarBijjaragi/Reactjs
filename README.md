@@ -1,9 +1,9 @@
 
 
-- [Installation](docs/create-react-app.md)
-- [Installation](docs/git-commands.md )
+- [react-related](docs/create-react-app.md)
+- [git-related](docs/git-commands.md )
 - [Installation](docs/installation.md)
-- [Installation](docs/npm-commands.md)
+- [npm-related](docs/npm-commands.md)
 
 
 

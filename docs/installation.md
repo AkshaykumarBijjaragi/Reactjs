@@ -1,4 +1,4 @@
-# React Project Without Create React App
+## React Project With webpack
 
 This repository provides a basic setup for a React project without using Create React App. Follow the steps below to initialize and configure the project.
 
@@ -24,13 +24,15 @@ npm install webpack webpack-cli webpack-dev-server --save-dev
 npm install babel-loader style-loader css-loader html-webpack-plugin --save-dev
 
 ### 6. Create Babel Configuration File (babel.config.js)
+```
 // babel.config.js
 {
   "presets": ["@babel/preset-env", "@babel/preset-react"]
 }
-
+```
 
 ### 7. Create Webpack Configuration File (webpack.config.js)
+```
 // webpack.config.js
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
@@ -64,9 +66,10 @@ module.exports = {
     port: 3000,
   },
 };
-
+```
 
 ### 8. Create React Component (App.js)
+```
 // src/App.js
 import React from 'react';
 
@@ -79,10 +82,10 @@ const App = () => {
 };
 
 export default App;
-
+```
 
 ### 9. Create HTML Template (public/index.html)
-
+```
 <!-- public/index.html -->
 <!DOCTYPE html>
 <html lang="en">
@@ -95,14 +98,15 @@ export default App;
   <div id="root"></div>
 </body>
 </html>
-
+```
 
 ### 10. Update package.json with Scripts
+```
 "scripts": {
   "start": "webpack serve --mode development",
   "build": "webpack --mode production"
 }
-
+```
 
 ### 11. Run the Development Server
 npm start ---> Visit http://localhost:3000 to view the app.
@@ -117,7 +121,7 @@ npm run build ---> This will generate a production-ready build in the dist direc
 
 
 
-# React Project Without Create React App (Using Parcel)
+## React Project With Using Parcel
 
 This repository provides a basic setup for a React project without using Create React App, using Parcel as the bundler. Follow the steps below to initialize and configure the project.
 
@@ -135,7 +139,7 @@ npm install react react-dom
 npm install -D parcel
 
 ### 4. Create React Component (App.js)
-// src/App.js
+```// src/App.js
 import React from 'react';
 
 const App = () => {
@@ -147,10 +151,10 @@ const App = () => {
 };
 
 export default App;
-
+```
 
 ### 5. Create HTML Template (public/index.html)
-<!-- public/index.html -->
+```<!-- public/index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -163,23 +167,24 @@ export default App;
   <script src="./src/index.js"></script>
 </body>
 </html>
-
+```
 
 ### 6. Create index.js for Rendering
-// src/index.js
+```// src/index.js
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 
 ReactDOM.render(<App />, document.getElementById('root'));
-
+```
 
 ### 7. Update package.json with Scripts
+```
 "scripts": {
   "start": "parcel public/index.html",
   "build": "parcel build public/index.html"
 }
-
+```
 
 ### 8. Run the Development Server
 npm start ---> Visit http://localhost:1234 to view the app.
