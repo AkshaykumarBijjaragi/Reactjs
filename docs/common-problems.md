@@ -6,6 +6,6 @@
 
 
 ### Error: Expected content key de1e4a02ec63c4eb to exist.
--```Remove-Item -Recurse -Force .parcel-cache``` then run```npx parcel index.html```
+-`Remove-Item -Recurse -Force .parcel-cache` then run `npx parcel index.html`
 
 
