@@ -9,3 +9,8 @@
 ```Remove-Item -Recurse -Force .parcel-cache``` then run```npx parcel index.html```
 
 
+## Error: Uncaught Error: Objects are not valid as a React child (found: object with keys {id, question, answer}). If you meant to render a collection of children, use an array instead.
+The error occurs if you are trying to directly render an object (data array in this case) as a child component in React, which is not allowed. React expects components to be rendered, not plain JavaScript objects
+
+
+

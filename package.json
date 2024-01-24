@@ -4,7 +4,7 @@
   "description": "\"practice sessions\"",
   "main": "index.js",
   "scripts": {
-    "start": "npx parcel index.html",
+    "start": "npx parcel public/index.html",
     "test": "jest"
   },
   "repository": {

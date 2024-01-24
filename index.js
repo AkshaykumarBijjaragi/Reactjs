@@ -1,12 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-
-const root = ReactDOM.createRoot(document.getElementById("root"));
+import Accordian from "./src/components/Accordian/Accordian";
 
 const hello = <h1>hello from react</h1>;
 
-root.render(hello);
-
-
-
-
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(<Accordian />);
