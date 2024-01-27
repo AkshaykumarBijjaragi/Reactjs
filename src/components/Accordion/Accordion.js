@@ -13,7 +13,6 @@ export default function Accordion() {
 
   function handleMulti(id) {
     if (multiItem.includes(id)) {
-      const newArr = multiItem.filter((item) => item !== id);
       setMultiItem(multiItem.filter((item) => item !== id));
     } else {
       setMultiItem((prevItems) => [...prevItems, id]);
@@ -29,7 +28,7 @@ export default function Accordion() {
           setMultiItem([]);
         }}
       >
-        {multi ? "disable multi selection" : "enable multi selection"}
+        {multi ? "Disable multi selection" : "Enable multi selection"}
       </button>
       <div className="accordion">
         {data && data.length > 0 ? (
