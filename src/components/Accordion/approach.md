@@ -16,3 +16,10 @@
 - In the event listener function, use the item's ID to set the state variable.
 - Use a ternary operator to conditionally render the answer section only for the selected item.
 
+### 3. Logic for Multi-Selection:
+
+- Add a button to enable or disable multi-selection.
+- Create a state variable (`multi`) to track whether multi-selection is enabled.
+- Create a state variable (`multiItem`) to maintain an array of selected items.
+- Modify the `onClick` event listener to either call `handleSingle` for single selection or `handleMulti` for multi-selection based on the `multi` state.
+- In the `handleMulti` function, check if the item's ID is already in `multiItem`. If yes, remove it; if not, add it.
