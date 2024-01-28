@@ -13,7 +13,6 @@ export default function Accordion() {
 
   function handleMulti(id) {
     if (multiItem.includes(id)) {
-      const newArr = multiItem.filter((item) => item !== id);
       setMultiItem(multiItem.filter((item) => item !== id));
     } else {
       setMultiItem((prevItems) => [...prevItems, id]);
