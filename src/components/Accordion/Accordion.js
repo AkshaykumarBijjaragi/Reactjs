@@ -25,11 +25,11 @@ export default function Accordion() {
       <button
         onClick={() => {
           setMulti(!multi);
-          setSelected(null)
+          setSelected(null);
           setMultiItem([]);
         }}
       >
-        {multi ? "disable multi selection" : "enable multi selection"}
+        {multi ? "Disable multi selection" : "Enable multi selection"}
       </button>
       <div className="accordion">
         {data && data.length > 0 ? (
