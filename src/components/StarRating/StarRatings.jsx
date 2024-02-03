@@ -1,10 +1,20 @@
 import { useState } from "react";
-
+// import "./index.css";
 const StarRatings = () => {
   const [rating, setRating] = useState(0);
+  const [hover, setHover] = useState(0);
 
   const handleStarClick = (selectedRating) => {
     setRating(selectedRating);
+  };
+
+  let tempRating = rating;
+  const handleStarHover = (star) => {
+    setHover(star);
+  };
+  const handleStarLeave = (star) => {
+    setHover(0);
+    setRating(tempRating);
   };
 
   return (
@@ -13,12 +23,13 @@ const StarRatings = () => {
         <span
           key={star}
           onClick={() => handleStarClick(star)}
+          data-value={star}
           style={{
-            cursor: "pointer",
-            color: star <= rating ? "gold" : "gray",
-            fontSize: "4rem",
-            cursor: "pointer",
+            color: star <= (rating || hover) ? "gold" : "gray",
+            fontSize: "3rem",
           }}
+          onMouseEnter={() => handleStarHover(star)}
+          onMouseLeave={handleStarLeave}
         >
           &#9733; {/* Unicode character for a star */}
         </span>
