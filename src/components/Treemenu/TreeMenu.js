@@ -1,4 +1,4 @@
-
+import "./TreeMenu.css"
 const TreeMenu = () => {
   return (
     <div>TreeMenu</div>
