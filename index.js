@@ -6,7 +6,8 @@ import ReactDOM from "react-dom/client";
 // import Accordion from "./src/components/Accordion/Accordion";
 // import Loadmore from "./src/components/LoadMoreProducts/Loadmore";
 import TreeMenu from "./src/components/Treemenu/TreeMenu";
+import menus from "./src/components/Treemenu/data"
 
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<TreeMenu />);
+root.render(<TreeMenu menus={menus}/>);
