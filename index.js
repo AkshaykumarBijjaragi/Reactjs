@@ -7,8 +7,8 @@ import ReactDOM from "react-dom/client";
 // import Loadmore from "./src/components/LoadMoreProducts/Loadmore";
 // import TreeMenu from "./src/components/Treemenu/TreeMenu";
 // import menus from "./src/components/Treemenu/data"
-import QRcodeGenerator from "./src/components/QRcodeGenerator/QRcodeGenerator";
-
+// import QRcodeGenerator from "./src/components/QRcodeGenerator/QRcodeGenerator";
+import Darkmode from "./src/components/Darkmode/Darkmode";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<QRcodeGenerator/>);
+root.render(<Darkmode />);
